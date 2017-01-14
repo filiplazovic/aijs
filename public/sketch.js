@@ -42,29 +42,29 @@ function updateBirds() {
   text("next: " + nextHoll, 10, 70);
 
   for(var i in birds){
-    birds[i].update();
-
-    var inputs = [
-      birds[i].y,
-      nextHoll
-    ]
-
-    var res = gen[i].compute(inputs);
-    if (res > 0.5) {
-      birds[i].up();
-    }
-
-    if (birds[i].hits(pipes)) {
-      ne.networkScore(gen[i], score);
-      if (isGameOver()) {
-        start();
-        break;
-      }
-    }
-
-    if (birds[i].pass(pipes)) {}
-
     if (birds[i].alive) {
+      birds[i].update();
+
+      var inputs = [
+        birds[i].y,
+        nextHoll
+      ]
+
+      var res = gen[i].compute(inputs);
+      if (res > 0.5) {
+        birds[i].up();
+      }
+
+      if (birds[i].hits(pipes)) {
+        ne.networkScore(gen[i], score);
+        if (isGameOver()) {
+          start();
+          break;
+        }
+      }
+
+      if (birds[i].pass(pipes)) {}
+
       birds[i].show();
     }
   }
