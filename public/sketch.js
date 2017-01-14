@@ -22,9 +22,8 @@ function setup() {
 function draw() {
   background(0);
   text("Score: " + score, 10, 10);
-  text("value: " + gen[0].layers[0].neurons[0].value, 10, 25);
-  text("Generation: " + generation, 10, 40);
-  text("Alive: " + getAlives(), 10, 55);
+  text("Generation: " + generation, 10, 25);
+  text("Alive: " + getAlives(), 10, 40);
   score++;
   updateBirds();
   updatePipes();
