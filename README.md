@@ -1,3 +1,3 @@
 # aijs
 
-Neuroevolution demo with p5.js
+Neuroevolution neural network learning to play game Flappy Birds with p5.js
