@@ -1,5 +1,7 @@
 # aijs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/filiplazovic/aijs.svg)](https://greenkeeper.io/)
+
 Neuroevolution neural network learning to play game Flappy Birds with p5.js
 
 Dependencies:
