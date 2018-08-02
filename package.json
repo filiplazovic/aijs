@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@coredao/dummy-scoped-package": "2.0.0",
+    "@coredao/dummy-scoped-package": "2.2.0",
     "express": "^4.14.0"
   }
 }
