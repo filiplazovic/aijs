@@ -11,6 +11,7 @@ function Pipe() {
   this.passed = false;
   this.highlight = false;
 }
+
 Pipe.prototype.show = function() {
   fill(255);
   rect(this.x, 0, this.w, this.top);
